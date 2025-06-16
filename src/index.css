@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme{
+  --color-azure-50: #f3f6fb;
+  --color-azure-100: #e4e9f5;
+  --color-azure-200: #d0daed;
+  --color-azure-300: #b0c2e0;
+  --color-azure-400: #8aa2d0;
+  --color-azure-500: #6e86c3;
+  --color-azure-600: #5b6eb5;
+  --color-azure-700: #4e5ca2;
+  --color-azure-800: #454f88;
+  --color-azure-900: #3b436d;
+  --color-azure-950: #282b43;
+  --color-azure-500/50: rgba(110, 134, 195, .5);
+  --color-azure-600/50: rgba(91, 110, 181, .5);
+  --color-azure-800/80: rgba(69, 79, 136, .8);
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f3f6fb;
+    background-color: #282b43;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #282b43;
+    background-color: #f3f6fb;
+  }
+}
